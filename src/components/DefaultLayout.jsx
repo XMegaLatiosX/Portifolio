@@ -8,10 +8,10 @@ function DefaultLayout({ children }) {
         <div className="no-scrollbar w-screen h-screen flex flex-col overflow-x-hidden select-none text-text">
 
             <header className="fixed flex top-4 w-full justify-center h-16 pl-2">
-                <div className="bg-background border-2 border-primary rounded-4xl w-fit flex items-center justify-between md:gap-48 sm:px-4 lg:px-4 z-50">
+                <div className="bg-background/85 border-2 border-primary rounded-4xl w-fit flex items-center justify-between md:gap-48 sm:px-4 lg:px-4 z-50">
                     <Link to={'/'} className="flex h-full items-center gap-4 shrink-0">
                         <img src="/icon.png" alt="Julio Souza icon image" className="max-h-11/12 h-11/12"/>
-                        <h3 className="text-3xl font-bold hidden sm:block">Júlio Souza</h3>    
+                        <h3 className="text-3xl text-primary font-bold hidden sm:block">Júlio Souza</h3>    
                     </Link>
 
                     <div className="font-bold h-full *:flex *:items-center *:gap-1 *:px-4 *:hover:underline decoration-2 *:transition-all *:duration-300 *:hover:bg-[#205f8a8a] text-nowrap *:hover:*:scale-105 **:transition-all *:h-full hidden sm:flex">
