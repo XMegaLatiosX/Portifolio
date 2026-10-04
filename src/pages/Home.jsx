@@ -147,6 +147,10 @@ function Home() {
                         <SkillDisplay name={"CSS3"} icon={"/icon.png"}/>  <SkillDisplay name={"HTML5"} icon={"/icon.png"}/>  <SkillDisplay name={""} icon={"/icon.png"}/>
                         <SkillDisplay name={"ReactJS"} icon={"/icon.png"}/>  <SkillDisplay name={"tailwindCSS"} icon={"/icon.png"}/>  <SkillDisplay name={"CloudFlare"} icon={"/icon.png"}/>
                         <SkillDisplay name={"GitHub"} icon={"/icon.png"}/>  <SkillDisplay name={"Git"} icon={"/icon.png"}/>  <SkillDisplay name={"Supabase"} icon={"/icon.png"}/>
+                        
+                        <SkillDisplay name={"CSS3"} icon={"/icon.png"}/>  <SkillDisplay name={"HTML5"} icon={"/icon.png"}/>  <SkillDisplay name={""} icon={"/icon.png"}/>
+                        <SkillDisplay name={"ReactJS"} icon={"/icon.png"}/>  <SkillDisplay name={"tailwindCSS"} icon={"/icon.png"}/>  <SkillDisplay name={"CloudFlare"} icon={"/icon.png"}/>
+                        <SkillDisplay name={"GitHub"} icon={"/icon.png"}/>  <SkillDisplay name={"Git"} icon={"/icon.png"}/>  <SkillDisplay name={"Supabase"} icon={"/icon.png"}/>
                     </div>
                 </div>
             </section>
