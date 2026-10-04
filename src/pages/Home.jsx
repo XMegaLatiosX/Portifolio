@@ -4,12 +4,25 @@ import { GoMail } from "react-icons/go"
 import { Link } from "react-router-dom"
 import { MdArrowOutward } from "react-icons/md"
 import { useEffect, useRef, useState } from "react"
+import ContactForm from "../components/ContactForm"
+
+
+function SkillDisplay({name, icon}) {
+    return (
+        <div className="flex gap-3 p-1 px-3 rounded-4xl h-12 min-w-48 border-primary border  text-lg justify-center items-center font-semibold shadow-[0_0_5px_rgb(0,0,0,0.12)] shadow-primary">
+            <img className="h-full" src={icon} alt={name + ' logo'} />
+            <span>{name}</span>
+        </div>
+    )
+}
+
 
 function Home() {
     const about_me_section = useRef(null)
     const projects_section = useRef(null)
+    
+    // const [is_on_top, set_is_on_top] = useState(true);
 
-    const [is_on_top, set_is_on_top] = useState(true);
 
     useEffect(() => {
         const checkScroll = () => {
@@ -111,10 +124,38 @@ function Home() {
 
                 </div>
             </section>
-            <section className="flex flex-col justify-center w-full pt-16" ref={projects_section}>
+
+            <hr className="w-10/12 self-center text-text-muted"/>
+
+            <section className="flex flex-col justify-center w-full md:p-16 gap-16" ref={projects_section}>
                 <h1 className="text-5xl font-bold text-center">Projects</h1>
                 <p>here is some of my projects used in real life scenarios by me or my clients</p>
+
+                <div>
+
+                </div>
             </section>
+
+
+
+
+            <section className="flex flex-col justify-center w-full py-16 gap-16">
+                <h1 className="text-5xl font-bold text-center">Skills</h1>
+                <p>for technical purposes, here is the tools I have experience with and use on my workflow</p>
+                <div className="overflow-hidden">
+                    <div className="flex gap-8">
+                        <SkillDisplay name={"CSS3"} icon={"/icon.png"}/>  <SkillDisplay name={"HTML5"} icon={"/icon.png"}/>  <SkillDisplay name={""} icon={"/icon.png"}/>
+                        <SkillDisplay name={"ReactJS"} icon={"/icon.png"}/>  <SkillDisplay name={"tailwindCSS"} icon={"/icon.png"}/>  <SkillDisplay name={"CloudFlare"} icon={"/icon.png"}/>
+                        <SkillDisplay name={"GitHub"} icon={"/icon.png"}/>  <SkillDisplay name={"Git"} icon={"/icon.png"}/>  <SkillDisplay name={"Supabase"} icon={"/icon.png"}/>
+                    </div>
+                </div>
+            </section>
+            
+
+            <hr className="w-10/12 self-center text-text-muted"/>
+
+            <ContactForm/>
+
         </DefaultLayout>
     )
 }
