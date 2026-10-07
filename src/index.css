@@ -38,3 +38,31 @@ body {
   width: max-content;
   animation: left-loop-scroll 25s linear infinite;
 }
+
+
+
+
+
+
+.animate-scroll-v {
+  animation: scrollV 15s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+
+.animate-scroll-h {
+  animation: scrollH 15s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+
+/* Frames do Scroll Vertical */
+@keyframes scrollV {
+  0%, 20% { transform: translateY(0%); }
+  25%, 50% { transform: translateY(-100%); }
+  55%, 80% { transform: translateY(-200%); }
+  85%, 100% { transform: translateY(-300%); }
+}
+
+@keyframes scrollH {
+  0%, 20% { transform: translateX(0%); }
+  25%, 50% { transform: translateX(-100%); }
+  55%, 80% { transform: translateX(-200%); }
+  85%, 100% { transform: translateX(-300%); }
+}
