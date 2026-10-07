@@ -1,4 +1,4 @@
-import { FaArrowDown, FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa"
+import { FaArrowDown, FaArrowRight, FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa"
 import DefaultLayout from "../components/DefaultLayout"
 import { GoMail } from "react-icons/go"
 import { Link } from "react-router-dom"
@@ -6,16 +6,27 @@ import { MdArrowOutward } from "react-icons/md"
 import { useEffect, useRef, useState } from "react"
 import ContactForm from "../components/ContactForm"
 
+import project_data from "../assets/projects/project_data.json"
+
+import css_icon from "../assets/tools icons/css3.png"
+import html_icon from "../assets/tools icons/html5.png"
+import react_icon from "../assets/tools icons/react.png"
+import tailwind_icon from "../assets/tools icons/tailwind.png"
+import cloudflare_icon from "../assets/tools icons/cloudflare.png"
+import github_icon from "../assets/tools icons/github.png"
+import git_icon from "../assets/tools icons/git.png"
+import supabase_icon from "../assets/tools icons/supabase.png"
+import ProjectCard from "../components/ProjectCard"
+
 
 function SkillDisplay({name, icon}) {
     return (
         <div className="flex gap-3 p-1 px-3 rounded-4xl h-12 min-w-48 border-primary border  text-lg justify-center items-center font-semibold shadow-[0_0_5px_rgb(0,0,0,0.12)] shadow-primary">
-            <img className="h-full" src={icon} alt={name + ' logo'} />
+            <img className="h-5/6" src={icon} alt={name + ' logo'} />
             <span>{name}</span>
         </div>
     )
 }
-
 
 function Home() {
     const about_me_section = useRef(null)
@@ -127,30 +138,39 @@ function Home() {
 
             <hr className="w-10/12 self-center text-text-muted"/>
 
-            <section className="flex flex-col justify-center w-full md:p-16 gap-16" ref={projects_section}>
+            <section className="flex flex-col justify-center items-center w-full md:p-16 gap-12" ref={projects_section}>
                 <h1 className="text-5xl font-bold text-center">Projects</h1>
-                <p>here is some of my projects used in real life scenarios by me or my clients</p>
+                <p>A showcase of some of the projects I have built</p>
 
-                <div>
-
+                <div className="gap-12 gap-y-4 md:gap-y-8 p-2 md:px-8 pb-16 self-center justify-center grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+                    {project_data.map((project, i) => (
+                        <ProjectCard key={i} name={project.name} title={project.title} thumbnail={project.thumbnail} type={project.type} duration={project.duration} date={project.date}/>
+                    ))}
+                </div>
+                <div className="w-full flex underline  text-primary justify-end items-end">
+                    <Link to={"/projects"} className="flex tansition-all duration-150 items-center gap-2 hover:scale-105">more projects <FaArrowRight size={14}/></Link>
                 </div>
             </section>
 
 
 
 
-            <section className="flex flex-col justify-center w-full py-16 gap-16">
+            <section className="flex flex-col justify-center items-center w-full py-16 gap-8">
                 <h1 className="text-5xl font-bold text-center">Skills</h1>
-                <p>for technical purposes, here is the tools I have experience with and use on my workflow</p>
-                <div className="overflow-hidden">
-                    <div className="flex gap-8">
-                        <SkillDisplay name={"CSS3"} icon={"/icon.png"}/>  <SkillDisplay name={"HTML5"} icon={"/icon.png"}/>  <SkillDisplay name={""} icon={"/icon.png"}/>
-                        <SkillDisplay name={"ReactJS"} icon={"/icon.png"}/>  <SkillDisplay name={"tailwindCSS"} icon={"/icon.png"}/>  <SkillDisplay name={"CloudFlare"} icon={"/icon.png"}/>
-                        <SkillDisplay name={"GitHub"} icon={"/icon.png"}/>  <SkillDisplay name={"Git"} icon={"/icon.png"}/>  <SkillDisplay name={"Supabase"} icon={"/icon.png"}/>
-                        
-                        <SkillDisplay name={"CSS3"} icon={"/icon.png"}/>  <SkillDisplay name={"HTML5"} icon={"/icon.png"}/>  <SkillDisplay name={""} icon={"/icon.png"}/>
-                        <SkillDisplay name={"ReactJS"} icon={"/icon.png"}/>  <SkillDisplay name={"tailwindCSS"} icon={"/icon.png"}/>  <SkillDisplay name={"CloudFlare"} icon={"/icon.png"}/>
-                        <SkillDisplay name={"GitHub"} icon={"/icon.png"}/>  <SkillDisplay name={"Git"} icon={"/icon.png"}/>  <SkillDisplay name={"Supabase"} icon={"/icon.png"}/>
+                <p>Here are the main tools and technologies I use in my workflow</p>
+                <div className="overflow-hidden w-full">
+                    <div className="flex animate-loop-scroll gap-8">
+                        <div className="flex gap-8 shrink-0">
+                            <SkillDisplay name={"CSS3"} icon={css_icon}/>  <SkillDisplay name={"HTML5"} icon={html_icon}/> 
+                            <SkillDisplay name={"ReactJS"} icon={react_icon}/>  <SkillDisplay name={"tailwindCSS"} icon={tailwind_icon}/>  <SkillDisplay name={"CloudFlare"} icon={cloudflare_icon}/>
+                            <SkillDisplay name={"GitHub"} icon={github_icon}/>  <SkillDisplay name={"Git"} icon={git_icon}/>  <SkillDisplay name={"Supabase"} icon={supabase_icon}/>
+                            
+                        </div>
+                        <div className="flex gap-8 shrink-0" aria-hidden="true">
+                            <SkillDisplay name={"CSS3"} icon={css_icon}/>  <SkillDisplay name={"HTML5"} icon={html_icon}/> 
+                            <SkillDisplay name={"ReactJS"} icon={react_icon}/>  <SkillDisplay name={"tailwindCSS"} icon={tailwind_icon}/>  <SkillDisplay name={"CloudFlare"} icon={cloudflare_icon}/>
+                            <SkillDisplay name={"GitHub"} icon={github_icon}/>  <SkillDisplay name={"Git"} icon={git_icon}/>  <SkillDisplay name={"Supabase"} icon={supabase_icon}/>
+                        </div>
                     </div>
                 </div>
             </section>

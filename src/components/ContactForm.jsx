@@ -62,11 +62,14 @@ export default function ContactForm() {
 
             <div className="flex flex-col md:flex-row md:*:max-w-lg justify-between">
                 <div className="flex flex-col w-11/12 max-w-full lg:w-lg items-center gap-8 *:items-center font-semibold">
-                    <h3 className="font-semibold">contact my social media</h3>
+                    <h3 className="font-semibold">get in touch with my social media</h3>
                     <div className="flex flex-col *:w-full *:flex *:gap-4 *:items-center *:hover:scale-110 *:transition-all *:duration-300 gap-4">
-                        <Link draggable="false" className="underline" to={"https://www.instagram.com//"}><FaInstagram size={32}/>???</Link>
-                        <Link draggable="false" className="underline" to={"https://wa.me/5519981273464?text=Olá,%20vim%20pelo%20site%20HLS%20Imóveis!"}><FaWhatsapp size={32}/>(19) 97123-0319</Link>
-                        <Link draggable="false" className="underline" to={"mailto:juio.alves.souza@gmail.com://dominio.com"}><GoMail size={32}/>Email</Link>
+                        <Link draggable="false" className="underline" to={"https://www.instagram.com//"}>
+                        <FaInstagram size={32}/>???</Link>
+                        <Link draggable="false" className="underline" to={"https://wa.me/5519981273464?text=Olá,%20vim%20pelo%20site%20HLS%20Imóveis!"}>
+                        <FaWhatsapp size={32}/>(19) 97123-0319</Link>
+                        <Link draggable="false" className="underline" to={"mailto:juio.alves.souza@gmail.com://dominio.com"}>
+                        <GoMail size={32}/>Email</Link>
                     </div>
                 </div>
                 

@@ -1,16 +1,14 @@
+import ContactForm from "../components/ContactForm"
 import DefaultLayout from "../components/DefaultLayout"
 
-function Home() {
+function Contact() {
     return (
         <DefaultLayout>
-            <section className="bg-white min-h-screen">
+            <div className="my-8"></div>
+            <ContactForm />
 
-            </section>
-            <div className="min-h-16 flex bg-gray-200 items-end">
-
-            </div>
         </DefaultLayout>
     )
 }
 
-export default Home
+export default Contact

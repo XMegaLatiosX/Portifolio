@@ -1,0 +1,44 @@
+[
+  {
+    "name": "hls imoveis website",
+    "title": "Real Estate Platform & Property Finder",
+    "thumbnail": "http://localhost:5173/src/assets/projects/project_media/hls%20imoveis.png",
+    "summary": "A plataform for property search and sales convertion with contact form, messages saving system and administrator panel for items/database management.",
+    "description": "Built from scratch in 8 days, this platform goes beyond a simple listing page. The property catalog supports <strong>12 simultaneous search filters</strong> with real-time results, and each listing features embedded Google Maps with satellite view for precise location context.<br/><br/>The admin panel gives the agency full control over inventory — adding, editing and removing properties without touching a single line of code. A built-in messaging system captures and stores leads directly from the contact forms, turning the website into an active sales tool rather than a static brochure.",
+    "features": ["landing page", "contact CTA", "database", "message/advertise system", "8 unique pages", "google map integration", "property catalog", "admin panel", "search with 12 filters"],
+    "solution": "The website provided credibility and an online presence for the real estate agency, allowing interested parties to find the company and its listings naturally through Google searches.",
+    "type": "Website",
+    "duration": "8 days",
+    "link": "https://hlsimoveis.com.br/",
+    "status": "in development",
+    "date": "30/08/2026"
+  },
+  {
+    "name": "angrybreads website",
+    "title": "online Bakery page for local orders",
+    "thumbnail": "http://localhost:5173/src/assets/projects/project_media/angry%20breads.png",
+    "summary": "Webpage featuring catalog for products as desserts and online sellings for local clients",
+    "description": "A conversion-focused bakery page built in 5 days. The product catalog is fully managed through an admin panel, allowing the owner to update offerings, images, prices and availability independently.<br/><br/>The results came before the site was even finished — <strong>2 leads and the bakery's first online sale</strong> were generated during development, validating the approach of prioritizing clear CTAs and a friction-free browsing experience for local customers.",
+    "features": ["landing page", "contact CTA", "5 unique pages", "database", "admin panel", "catalog"],
+    "solution": "The brand got new visits and even during development already converted into 2 contacts and their first online sale for local people, also giving credibility to clients since the backery got its own website",
+    "type": "Website",
+    "duration": "5 days",
+    "link": "https://www.angrybreads.com/",
+    "status": "live",
+    "date": "22/07/2026"
+  },
+  {
+    "name": "xmegalatiosx website",
+    "title": "Artist personal webpage, gallery and progress tool",
+    "thumbnail": "http://localhost:5173/src/assets/projects/project_media/xmega%20latiosx.png",
+    "summary": "Personal website for a growing artist, displaying his content, featuring gallery for multiple genres of art, blog, public improvment tool as well as personal database and admin panel for content managment",
+    "description": "A personal platform built to outgrow the limitations of social media. Instead of being locked to a single content format like Instagram, the site spans <strong>15 pages across multiple creative disciplines</strong> — pixel art gallery, written blog, and a public self-improvement tracking tool where visitors can follow skill progression over time.<br/><br/>The account system supports profile pictures and custom nicknames, and the entire content pipeline — from blog posts to gallery uploads — is managed through a custom admin panel backed by Supabase. The platform's reach translated directly: <strong>the artist's Discord community doubled in size</strong> through organic traffic from the website alone.",
+    "features": ["landing page", "15 unique pages", "database", "admin panel", "gallery", "blog page", "public self improvment track tool","search system", "account system with profile picture and nickname"],
+    "solution": "The artist got his own gallery to publish and showcase his work and social media, no longer stuck to one art genre like he was on Instagram and other social media, he got visits from his website and the number of people in his social community on Discord doubled just through the website.",
+    "type": "Website",
+    "duration": "-",
+    "link": "https://xmegalatiosx.com/",
+    "status": "in development",
+    "date": "18/01/2026"
+  }
+]
