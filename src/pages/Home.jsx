@@ -17,6 +17,13 @@ import github_icon from "../assets/tools icons/github.png"
 import git_icon from "../assets/tools icons/git.png"
 import supabase_icon from "../assets/tools icons/supabase.png"
 import ProjectCard from "../components/ProjectCard"
+// Substitua o bloco de screenshots por este:
+import mobile_hls_imoveis_screenshot from "@/assets/images/screenshots/mobile-hls-imoveis.png"
+import mobile_angrybreads_screenshot from "@/assets/images/screenshots/mobile-angrybreads.png"
+import mobile_xmegalatiosx_screenshot from "@/assets/images/screenshots/mobile-xmegalatiosx.png"
+import desktop_hls_imoveis_screenshot from "@/assets/images/screenshots/desktop-hls-imoveis.png"
+import desktop_angrybreads_screenshot from "@/assets/images/screenshots/desktop-angrybreads.png"
+import desktop_xmegalatiosx_screenshot from "@/assets/images/screenshots/desktop-xmegalatiosx.png"
 
 
 function SkillDisplay({name, icon}) {
@@ -46,6 +53,19 @@ function Home() {
 
     return (
         <DefaultLayout>
+            <div className="absolute w-full min-w-full h-screen min-h-screen flex -z-10">
+                <div className="relative w-full h-full perspective-[1000px]">
+                    <div className="rotate-y-25 absolute flex items-center justify-center bg-primary border-primary aspect-9/17 h-2/4 self-center translate-x-[50vw] translate-y-[45vh] rounded-2xl">
+                        <div className="w-11/12 bg-black h-11/12 rounded-lg flex flex-col overflow-hidden *:w-full *:min-h-full">
+                            <img src={mobile_hls_imoveis_screenshot} />
+                            <img src={mobile_angrybreads_screenshot} />
+                            <img src={mobile_xmegalatiosx_screenshot} />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
             <section className="min-h-screen flex items-center">
                 <div className="flex flex-col md:flex-row px-4 gap-8 pt-16">
                     <h1 className="flex flex-col w-full text-center font-extrabold text-title text-6xl md:text-8xl">
