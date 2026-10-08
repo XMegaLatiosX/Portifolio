@@ -37,8 +37,6 @@ function SkillDisplay({name, icon}) {
 function Home() {
     const about_me_section = useRef(null)
     const projects_section = useRef(null)
-    
-    // const [is_on_top, set_is_on_top] = useState(true);
 
 
     useEffect(() => {
@@ -52,7 +50,7 @@ function Home() {
 
     return (
         <DefaultLayout>
-            <div className="relative w-full min-h-screen bg-black text-white flex items-center justify-center px-6 md:px-16 overflow-hidden">
+            <div id="start" className="relative w-full min-h-screen bg-black text-white flex items-center justify-center px-6 md:px-16 overflow-hidden">
             
             <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-3 gap-8 items-center z-10">
                 
@@ -182,7 +180,7 @@ function Home() {
 
 
 
-            <section ref={about_me_section} className="flex flex-col md:px-16 lg:px-24 py-32 gap-16 md:gap-32 lg:gap-40
+            <section id="about_me_section" ref={about_me_section} className="flex flex-col md:px-16 lg:px-24 py-32 gap-16 md:gap-32 lg:gap-40
             *:w-7/12 font-semibold *:flex *:flex-col *:gap-3 lg:*:gap-6">
                 <div>
                     <h1 className="font-bold text-title text-3xl">About Me</h1>
