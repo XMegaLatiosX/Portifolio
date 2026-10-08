@@ -44,7 +44,7 @@ function DefaultLayout({ children }) {
 
             <hr className="text-text-muted" />
             <footer className="flex flex-col relative py-8 min-h-96 lg:px-16 w-full font-semibold gap-8 text-text-muted">
-                <div className="flex flex-col w-fit gap-2 items-center">
+                <div className="flex flex-col md:w-fit md:pl-4 gap-2 items-center">
                     <div className="flex items-center gap-4">
                         <img className="aspect-square h-16 rounded-full" src="/icon.png" alt="Julio Souza icon image"/>
                         <h3 className="text-3xl text-primary font-bold hidden lg:block">Júlio Souza</h3>    
