@@ -54,14 +54,14 @@ export default function ContactForm() {
     }
 
     return (
-        <section className="flex flex-col justify-center w-full py-16 md:px-24 gap-16 *:text-center">
+        <section className="flex flex-col justify-center w-full py-16 lg:px-24 gap-8 lg:gap-16 *:text-center">
             <div className="flex flex-col justify-center gap-8">
                 <h1 className="text-5xl font-bold">Contact</h1>
                 <p>Interested? Leave me a message, you can also see my social media</p>
             </div>
 
-            <div className="flex flex-col md:flex-row md:*:max-w-lg justify-between">
-                <div className="flex flex-col w-11/12 max-w-full lg:w-lg items-center gap-8 *:items-center font-semibold">
+            <div className="flex flex-col lg:flex-row gap-8 lg:gap-0 lg:*:max-w-lg justify-between">
+                <div className="flex flex-col max-w-full lg:w-lg items-center gap-8 *:items-center font-semibold">
                     <h3 className="font-semibold">get in touch with my social media</h3>
                     <div className="flex flex-col *:w-full *:flex *:gap-4 *:items-center *:hover:scale-110 *:transition-all *:duration-300 gap-4">
                         <Link draggable="false" className="underline" to={"https://www.instagram.com//"}>
@@ -74,7 +74,7 @@ export default function ContactForm() {
                 </div>
                 
                 
-                <form onSubmit={submitMessage} className="flex flex-col gap-4 items-center w-11/12 max-w-full lg:w-lg *:rounded-sm">
+                <form onSubmit={submitMessage} className="flex flex-col gap-4 items-center px-2 max-w-full lg:w-lg *:rounded-sm">
                     <h3 className="font-semibold">leave your message</h3>
                     <input    ref={nameInputRef} onChange={(e) => set_nameInput(e.target.value)} className="border border-primary pl-2 font-semibold py-1 w-full"  type="text" placeholder="Name" name="name" required/>
                     <input    ref={contactInputRef} onChange={(e) => set_contactInput(e.target.value)} className="border border-primary pl-2 font-semibold py-1 w-full"  type="text" placeholder="Email or phone number" name="email" required/>

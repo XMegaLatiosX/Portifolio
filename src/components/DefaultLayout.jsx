@@ -9,27 +9,27 @@ function DefaultLayout({ children }) {
     return (
         <div className="no-scrollbar w-screen h-screen flex flex-col overflow-x-hidden select-none text-text">
 
-            <header className="fixed flex top-4 w-full justify-center h-12 md:h-14 px-2 z-50">
-                <div className="bg-background/85 border-2 border-primary rounded-4xl w-full md:w-fit flex items-center justify-between md:gap-48 px-4 lg:px-4 z-50">
+            <header className="fixed flex top-4 w-full justify-center h-12 lg:h-14 px-2 z-50">
+                <div className="bg-background/85 border-2 border-primary rounded-4xl w-full lg:w-fit flex items-center justify-between lg:gap-48 px-4 lg:px-4 z-50">
                     <Link to={'/#start'} className="flex h-full items-center gap-4 shrink-0">
                         <img src="/icon.png" alt="Julio Souza icon image" className="max-h-11/12 h-11/12"/>
-                        <h3 className="text-3xl text-primary font-bold hidden sm:block">Júlio Souza</h3>    
+                        <h3 className="text-3xl text-primary font-bold hidden lg:block">Júlio Souza</h3>    
                     </Link>
 
-                    <div className="font-bold h-full *:flex *:items-center *:gap-1 *:px-4 *:hover:underline decoration-2 *:transition-all *:duration-300 *:hover:bg-[#205f8a8a] text-nowrap *:hover:*:scale-105 **:transition-all *:h-full hidden sm:flex">
+                    <div className="font-bold h-full *:flex *:items-center *:gap-1 *:px-4 *:hover:underline decoration-2 *:transition-all *:duration-300 *:hover:bg-[#205f8a8a] text-nowrap *:hover:*:scale-105 **:transition-all *:h-full hidden lg:flex">
                         <Link to={'/#start'}><span>HOME</span></Link>
                         <Link to={'/#about_me_section'}><span>ABOUT ME</span></Link>
                         <Link to={'/projects'}><span>PROJECTS</span></Link>
                         <Link to={'/contact'}><span>CONTACT ME</span></Link>
                     </div>
                     
-                    <button className="h-full aspect-square flex justify-end items-center sm:hidden" onClick={() => set_nav_bar_open(!nav_bar_open)}>
+                    <button className="h-full aspect-square flex justify-end items-center lg:hidden" onClick={() => set_nav_bar_open(!nav_bar_open)}>
                         <IoMenu size={56}/>
                     </button>
 
                 </div>
 
-                <div className={`absolute flex w-full max-w-full flex-col *:min-h-12 text-xl font-bold *:bg-black *:hover:bg-background top-14 *:active:duration-150 *:transition-all *:duration-300 *:items-center *:justify-center *:flex *:border-b-2 *:border-text-muted sm:min-h-0 sm:max-h-0 ${nav_bar_open? 'min-h-48 max-h-48' : 'min-h-0 max-h-0'} transition-all duration-500 overflow-hidden z-40`}>
+                <div className={`absolute flex w-full max-w-full flex-col *:min-h-12 text-xl font-bold *:bg-black *:hover:bg-background top-14 *:active:duration-150 *:transition-all *:duration-300 *:items-center *:justify-center *:flex *:border-b-2 *:border-text-muted lg:min-h-0 lg:max-h-0 ${nav_bar_open? 'min-h-48 max-h-48' : 'min-h-0 max-h-0'} transition-all duration-500 overflow-hidden z-40`}>
                         <Link to={'/#start'}><span>HOME</span></Link>
                         <Link to={'/#about_me_section'}><span>ABOUT ME</span></Link>
                         <Link to={'/projects'}><span>PROJECTS</span></Link>
@@ -43,11 +43,11 @@ function DefaultLayout({ children }) {
 
 
             <hr className="text-text-muted" />
-            <footer className="flex flex-col relative py-8 min-h-96 md:px-16 w-full font-semibold gap-8 text-text-muted">
+            <footer className="flex flex-col relative py-8 min-h-96 lg:px-16 w-full font-semibold gap-8 text-text-muted">
                 <div className="flex flex-col w-fit gap-2 items-center">
                     <div className="flex items-center gap-4">
                         <img className="aspect-square h-16 rounded-full" src="/icon.png" alt="Julio Souza icon image"/>
-                        <h3 className="text-3xl text-primary font-bold hidden sm:block">Júlio Souza</h3>    
+                        <h3 className="text-3xl text-primary font-bold hidden lg:block">Júlio Souza</h3>    
                     </div>
                     <span className="text-text">The dev your brand deserve.</span>
                 </div>

@@ -136,7 +136,7 @@ function Home() {
 
 
 
-            <section id="about_me_section" ref={about_me_section} className="flex flex-col items-center px-4 lg:px-24 py-32 gap-16 lg:gap-40
+            <section id="about_me_section" ref={about_me_section} className="flex flex-col px-4 lg:px-24 py-32 gap-16 lg:gap-40
             *:lg:w-7/12 font-semibold *:flex *:flex-col *:gap-3 lg:*:gap-6">
                 <div>
                     <h1 className="font-bold text-title text-3xl">About Me</h1>
