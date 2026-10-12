@@ -54,7 +54,7 @@ function Home() {
 
                 <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-3 gap-8 items-center z-10">
 
-                    <div className="flex flex-col justify-center text-center lg:text-left">
+                    <div className="flex flex-col justify-center text-center lg:text-leftA">
 
                         <h1 className="flex flex-col w-full font-extrabold text-title text-5xl lg:text-6xl gap-2">
 
