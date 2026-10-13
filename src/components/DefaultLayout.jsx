@@ -55,13 +55,13 @@ function DefaultLayout({ children }) {
                 <nav className="flex flex-row justify-around">
                     <div className="flex flex-col gap-4 h-8 *:flex *:gap-1 *:items-center">
                         <span className="text-lg font-bold text-text">CONTATO:</span>
-                        <a target="_blank" rel="noopener noreferrer" href="https://wa.me/5519981273464?text=Olá,%20vim%20pelo%20site%20HLS%20Imóveis!">
+                        <a target="_blank" rel="noopener noreferrer" href="https://wa.me/5519971230319?text=Hello,%20I'm%20interested%20in%20a%20website!">
                             <FaWhatsapp></FaWhatsapp>
                             (19) 97123-0319
                         </a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/???/">
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/js.webdev/">
                             <FaInstagram ></FaInstagram >
-                            ???
+                            instagram
                         </a>
                     </div>
 

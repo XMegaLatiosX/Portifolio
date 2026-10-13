@@ -29,7 +29,7 @@ function Project() {
                     <div className="flex flex-col gap-8 py-16">
                         <h4 className="text-3xl font-bold text-primary">Features</h4>
                         <div className="flex flex-col gap-2 text-xl font-semibold mb-8">
-                            {project.features.map(feature => (<span>– {feature}</span>))}
+                            {project.features.map((feature, i) => (<span key={i}>– {feature}</span>))}
                         </div>
                         <h4 className="text-3xl font-bold text-primary">Solutions</h4>
                         <p className="font-semibold text-lg">{project.solution}</p>

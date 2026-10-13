@@ -97,12 +97,12 @@ function Home() {
                         </p>
 
                         {/* Botões */}
-                        <div className="flex flex-wrap gap-2 pt-2 *:px-2 *:py-2 *:lg:px-6 *:lg:py-3 *:rounded-md font-medium">
+                        <div className="flex flex-wrap lg:justify-start justify-center gap-2 pt-2 *:px-2 *:py-2 *:lg:px-6 *:lg:py-3 *:rounded-md font-medium">
                             <button className="bg-primary flex items-center gap-1 lg:gap-2">
-                            Contact me <MdArrowOutward size={24}/>
+                                Get a Free Quote <MdArrowOutward size={24}/>
                             </button>
                             <button className="border border-primary hover:bg-primary">
-                            See my projects
+                                See my projects
                             </button>
                         </div>
                     </div>
@@ -120,10 +120,10 @@ function Home() {
 
             <div className="relative lg:-top-10 lg:h-auto lg:pr-8 flex flex-col lg:flex-row lg:bg-transparent justify-end items-center lg:gap-8 w-full lg:w-fit gap-4 py-4 lg:py-0 self-end text-lg font-semibold
             *:flex *:items-center *:gap-2 *:hover:underline *:hover:scale-110 *:hover:cursor-pointer *:transition-all *:duration-150">
-                <a><FaWhatsapp size={24}/><span>+55 (19) 97123-0319</span></a>
-                <a><FaInstagram size={24}/><span>Instagram</span></a>
-                <a><FaGithub size={24}/><span>GitHub</span></a>
-                <a><GoMail size={24}/><span>Email</span></a>
+                <a href="https://wa.me/5519971230319?text=Hello,%20I'm%20interested%20in%20a%20website!"><FaWhatsapp size={24}/><span>+55 (19) 97123-0319</span></a>
+                <a href="https://www.instagram.com/js.webdev/"><FaInstagram size={24}/><span>Instagram</span></a>
+                <a href="https://github.com/XMegaLatiosX?tab=repositories"><FaGithub size={24}/><span>GitHub</span></a>
+                <a href="mailto:juio.alves.souza@gmail.com://dominio.com"><GoMail size={24}/><span>Email</span></a>
             </div>
 
 
