@@ -24,10 +24,12 @@ import mobile_xmegalatiosx_screenshot from "../assets/images/screenshots/mobile-
 import desktop_hls_imoveis_screenshot from "../assets/images/screenshots/desktop-hls-imoveis.png"
 import desktop_angrybreads_screenshot from "../assets/images/screenshots/desktop-angrybreads.png"
 import desktop_xmegalatiosx_screenshot from "../assets/images/screenshots/desktop-xmegalatiosx.png"
+import { useReveal } from "../utils/useReveal"
+
 
 function SkillDisplay({name, icon}) {
     return (
-        <div className="flex gap-3 p-1 px-3 rounded-4xl h-12 min-w-48 border-primary border  text-lg justify-center items-center font-semibold shadow-[0_0_5px_rgb(0,0,0,0.12)] shadow-primary">
+        <div className="flex gap-3 p-1 px-3 rounded-4xl h-12 md:min-w-48 border-primary border  text-lg justify-center items-center font-semibold shadow-[0_0_5px_rgb(0,0,0,0.12)] shadow-primary">
             <img className="h-5/6" src={icon} alt={name + ' logo'} />
             <span>{name}</span>
         </div>
@@ -37,6 +39,9 @@ function SkillDisplay({name, icon}) {
 function Home() {
     const about_me_section = useRef(null)
     const projects_section = useRef(null)
+    const reveal1 = useReveal()
+    const reveal2 = useReveal()
+    const reveal3 = useReveal()
 
 
     useEffect(() => {
@@ -50,24 +55,24 @@ function Home() {
 
     return (
         <DefaultLayout>
-            <div id="start" className="relative w-full min-h-screen bg-black flex lg:items-center justify-center mt-24 lg:my-0 px-6 lg:px-16 lg:overflow-hidden">
+            <div id="start" className="relative w-full min-h-screen flex lg:items-center justify-center mt-24 lg:my-0 px-6 lg:px-16 lg:overflow-hidden">
 
-                <div className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-3 gap-8 items-center z-10">
+                <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-8 items-center z-10">
 
                     <div className="flex flex-col justify-center text-center lg:text-leftA">
 
                         <h1 className="flex flex-col w-full font-extrabold text-title text-5xl lg:text-6xl gap-2">
 
                             <span>YOUR</span>
-                            <span className="text-transparent [-webkit-text-stroke-color:var(--color-primary)] [-webkit-text-stroke-width:2px]">DIGITAL</span>
+                            <span className="text-primary lg:text-transparent [-webkit-text-stroke-color:var(--color-primary)] [-webkit-text-stroke-width:2px]">DIGITAL</span>
                             <span>SPACE</span>
                         </h1>
 
                     </div>
 
-                    <div className="relative w-full scale-75 lg:scale-100 lg:h-100 flex items-center justify-center perspective-distant -top-30 lg:top-auto -z-10 opacity-50 lg:opacity-100">
+                    <div className="relative w-full scale-75 lg:scale-100 lg:h-2/3 flex items-center justify-center perspective-distant -top-30 lg:top-auto -z-10 opacity-75 lg:opacity-100">
 
-                        <div className="absolute rotate-y-25 lg:-translate-x-12 bg-primary border-4 border-primary aspect-video h-55 lg:h-65 rounded-xl shadow-2xl transition-transform duration-500 hover:rotate-y-6">
+                        <div className="absolute rotate-y-25 lg:-translate-x-8 bg-primary border-4 border-primary aspect-video h-55 lg:h-[125%] rounded-xl shadow-2xl transition-transform duration-500 hover:rotate-y-6">
                             <div className="w-full h-full bg-neutral-900 rounded-lg flex flex-row flex-nowrap overflow-hidden">
                                 <img src={desktop_angrybreads_screenshot} className="w-full min-w-full h-full object-cover shrink-0 animate-scroll-h" alt="Laptop 1" />
                                 <img src={desktop_xmegalatiosx_screenshot} className="w-full min-w-full h-full object-cover shrink-0 animate-scroll-h" alt="Laptop 2" />
@@ -110,15 +115,19 @@ function Home() {
                 </div>
 
                 {/* ELEMENTOS DECORATIVOS / OUTROS DESENHOS */}
-                {/* Se você quiser colocar formas abstratas ou círculos de luz (blur) ao fundo, coloque-os aqui com -z-10 */}
-                <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-purple-600/10 rounded-full blur-[120px] pointer-events-none -z-10" />
-                <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-indigo-600/10 rounded-full blur-[150px] pointer-events-none -z-10" />
+                {/* Se você quiser colocar formas abstratas ou círculos de luz (blur) ao fundo, coloque-os aqui com -z-10 */}{/* ELEMENTOS DECORATIVOS / FUNDO AVANÇADO */}
+
+                {/* Brilhos de fundo maiores e mais destacados */}{/* Card flutuante decorativo estilo Glassmorphism atrás das telas */}
+
+                <div className="absolute top-12 left-1/4 w-125 h-125 bg-purple-600/20 rounded-full blur-[120px] pointer-events-none -z-10 animate-pulse" />
+                <div className="absolute bottom-12 right-1/4 w-150 h-150 bg-indigo-600/15 rounded-full blur-[150px] pointer-events-none -z-10" />
+
             </div>
 
 
 
 
-            <div className="relative lg:-top-10 lg:h-auto lg:pr-8 flex flex-col lg:flex-row lg:bg-transparent justify-end items-center lg:gap-8 w-full lg:w-fit gap-4 py-4 lg:py-0 self-end text-lg font-semibold
+            <div className="relative lg:-top-10 lg:h-auto lg:pr-8 flex flex-col lg:flex-row lg:bg-transparent justify-end items-center lg:gap-8 w-full lg:w-fit gap-4 py-4 lg:py-0 self-end text-lg font-semibold z-10
             *:flex *:items-center *:gap-2 *:hover:underline *:hover:scale-110 *:hover:cursor-pointer *:transition-all *:duration-150">
                 <a href="https://wa.me/5519971230319?text=Hello,%20I'm%20interested%20in%20a%20website!"><FaWhatsapp size={24}/><span>+55 (19) 97123-0319</span></a>
                 <a href="https://www.instagram.com/js.webdev/"><FaInstagram size={24}/><span>Instagram</span></a>
@@ -138,12 +147,12 @@ function Home() {
 
             <section id="about_me_section" ref={about_me_section} className="flex flex-col px-4 lg:px-24 py-32 gap-16 lg:gap-40
             *:lg:w-7/12 font-semibold *:flex *:flex-col *:gap-3 lg:*:gap-6">
-                <div>
+                <div ref={reveal1} className="opacity-0 translate-y-8 transition-all duration-700">
                     <h1 className="font-bold text-title text-3xl">About Me</h1>
                     <p>As a full-stack Web Developer, designer and artist myself, I can see how powerful a well made dedicated website can be for a business, giving you the space to connect you with your audience and display your work with the impact it deserve!</p>
                 </div>
 
-                <div className="self-end">
+                <div ref={reveal2} className="opacity-0 translate-y-8 transition-all duration-700 self-end">
                     <h1 className="font-bold text-title text-3xl">Why should I get my website?</h1>
 
                     <span>with your own website you get...</span>
@@ -172,7 +181,7 @@ function Home() {
                     </ul>
                 </div>
                 
-                <div>
+                <div ref={reveal3} className="opacity-0 translate-y-8 transition-all duration-700">
                     <h1 className="font-bold text-title text-3xl">What do you have to offer?</h1>
                     <p>I guarantee you a good quality end result for a cheap reasonable price! I can and I will give you the digital space your brand need with the impact and emotion you desire,
                         with good effort on every little detail without generic templates nor sluggish generative AI, making sure you can connect with people and convert your work into sales!
@@ -214,6 +223,11 @@ function Home() {
                             <SkillDisplay name={"ReactJS"} icon={react_icon}/>  <SkillDisplay name={"tailwindCSS"} icon={tailwind_icon}/>  <SkillDisplay name={"CloudFlare"} icon={cloudflare_icon}/>
                             <SkillDisplay name={"GitHub"} icon={github_icon}/>  <SkillDisplay name={"Git"} icon={git_icon}/>  <SkillDisplay name={"Supabase"} icon={supabase_icon}/>
                             
+                        </div>
+                        <div className="flex gap-8 shrink-0" aria-hidden="true">
+                            <SkillDisplay name={"CSS3"} icon={css_icon}/>  <SkillDisplay name={"HTML5"} icon={html_icon}/> 
+                            <SkillDisplay name={"ReactJS"} icon={react_icon}/>  <SkillDisplay name={"tailwindCSS"} icon={tailwind_icon}/>  <SkillDisplay name={"CloudFlare"} icon={cloudflare_icon}/>
+                            <SkillDisplay name={"GitHub"} icon={github_icon}/>  <SkillDisplay name={"Git"} icon={git_icon}/>  <SkillDisplay name={"Supabase"} icon={supabase_icon}/>
                         </div>
                         <div className="flex gap-8 shrink-0" aria-hidden="true">
                             <SkillDisplay name={"CSS3"} icon={css_icon}/>  <SkillDisplay name={"HTML5"} icon={html_icon}/> 
