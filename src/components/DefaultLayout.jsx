@@ -25,7 +25,7 @@ function DefaultLayout({ children }) {
         <div className="no-scrollbar w-screen h-screen flex flex-col overflow-x-hidden select-none text-text bg-background transition-colors duration-300">
 
             <header className="fixed flex top-4 w-full justify-center h-12 lg:h-14 px-2 z-50">
-                <div className="bg-background/85 backdrop-blur-sm border-2 border-primary rounded-4xl w-full lg:w-fit flex items-center justify-between lg:gap-12 px-4 lg:px-4 z-50">
+                <div className="bg-background backdrop-blur-sm border-2 border-primary rounded-4xl w-full lg:w-fit flex items-center justify-between lg:gap-12 px-4 lg:px-4 z-50">
                     <Link to={'/#start'} className="flex h-full items-center gap-4 shrink-0">
                         <img src="/icon.png" alt="Julio Souza icon image" className="max-h-11/12 h-11/12 rounded-full"/>
                         <h3 className="text-xl text-primary font-bold hidden lg:block">Júlio Souza</h3>
