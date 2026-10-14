@@ -25,6 +25,7 @@ import desktop_hls_imoveis_screenshot from "../assets/images/screenshots/desktop
 import desktop_angrybreads_screenshot from "../assets/images/screenshots/desktop-angrybreads.png"
 import desktop_xmegalatiosx_screenshot from "../assets/images/screenshots/desktop-xmegalatiosx.png"
 import { useReveal } from "../utils/useReveal"
+import CyclingText from "../utils/CyclingText"
 
 
 const SKILLS = [
@@ -101,7 +102,7 @@ function Home() {
                         </p>
 
                         <p className="text-text-muted font-semibold text-base mb-0 leading-relaxed max-w-sm">
-                        I develop the tools for you to publish, sell and manage your business online.
+                        I develop the tools for you to publish, sell and manage <CyclingText className="text-2xl text-primary" width="48" words={["your business", "your art", "your music", "your brand"]} /> online.
                         </p>
 
                         {/* Botões */}
