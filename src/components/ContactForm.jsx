@@ -78,7 +78,7 @@ export default function ContactForm() {
                     <input    ref={nameInputRef} onChange={(e) => set_nameInput(e.target.value)} className="border border-primary pl-2 font-semibold py-1 w-full"  type="text" placeholder="Name" name="name" required/>
                     <input    ref={contactInputRef} onChange={(e) => set_contactInput(e.target.value)} className="border border-primary pl-2 font-semibold py-1 w-full"  type="text" placeholder="Email or phone number" name="email" required/>
                     <textarea ref={messageInputRef} onChange={(e) => set_messageInput(e.target.value)} className="border border-primary pl-2 font-semibold py-1 w-full min-h-32"  placeholder="Your message" name="message" required></textarea>
-                    <button   ref={sendMessageButton} className={`${message_sent ? 'bg-green-500 text-green-200' : 'bg-primary'} h-12 w-48 cursor-pointer transition-all duration-300 disabled:opacity-70`} disabled={message_sent || is_submitting} type="submit">
+                    <button   ref={sendMessageButton} className={`${message_sent ? 'bg-green-500 text-green-200' : 'bg-primary'} text-[#f1f1ff] font-semibold h-12 w-48 cursor-pointer transition-all duration-300 disabled:opacity-70`} disabled={message_sent || is_submitting} type="submit">
                         {is_submitting ? "Sending..." : message_sent ? "Message sent!" : "Submit"}
                     </button>
                     {error_message && <span className="text-red-500 text-sm">{error_message}</span>}

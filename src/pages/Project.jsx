@@ -23,7 +23,7 @@ function Project() {
 
                     <hr className="text-text-muted"/>
 
-                    <a className=" border border-primary text-lg w-32 p-1 px-2 rounded-full flex justify-around items-center font-semibold hover:scale-105 transition-all duration-150 underline" href={project.link}><span>see live</span> <HiOutlineExternalLink size={28} /></a>
+                    <a className=" border border-primary bg-primary/45 text-lg w-32 p-1 px-2 rounded-full flex justify-around items-center font-semibold hover:scale-105 transition-all duration-150 underline" href={project.link}><span>see live</span> <HiOutlineExternalLink size={28} /></a>
 
                     <img className="rounded-md" src={project.thumbnail} alt={'project ' + project.title + 'thumbnail'} />
 

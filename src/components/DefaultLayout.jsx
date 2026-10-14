@@ -54,7 +54,7 @@ function DefaultLayout({ children }) {
 
                 </div>
 
-                <div className={`absolute flex w-full max-w-full flex-col *:min-h-12 text-xl font-bold bg-background/95 backdrop-blur-md top-14 *:active:duration-150 *:transition-all *:duration-300 *:items-center *:justify-center *:flex *:border-b-2 *:border-text-muted lg:min-h-0 lg:max-h-0 ${nav_bar_open? 'min-h-60 max-h-60' : 'min-h-0 max-h-0'} transition-all duration-500 overflow-hidden z-40`}>
+                <div className={`absolute flex w-full max-w-full flex-col *:min-h-12 text-xl font-bold bg-background backdrop-blur-md top-14 *:active:duration-150 *:transition-all *:duration-300 *:items-center *:justify-center *:flex *:border-b-2 *:border-text-muted lg:min-h-0 lg:max-h-0 ${nav_bar_open? 'min-h-60 max-h-60' : 'min-h-0 max-h-0'} transition-all duration-500 overflow-hidden z-40`}>
                         <Link to={'/#start'}><span>HOME</span></Link>
                         <Link to={'/#about_me_section'}><span>ABOUT ME</span></Link>
                         <Link to={'/projects'}><span>PROJECTS</span></Link>

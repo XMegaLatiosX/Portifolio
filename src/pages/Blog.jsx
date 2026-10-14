@@ -5,14 +5,14 @@ import posts_data from "../assets/blog/posts.json"
 function Blog() {
     return (
         <DefaultLayout>
-            <section className="pt-32 pb-16 flex flex-col items-center min-h-screen">
+            <section className="py-24 pb-16 flex flex-col items-center">
                 <div className="w-full md:w-10/12 px-4 md:px-0">
                     <h1 className="text-5xl font-bold mb-4">Blog</h1>
                     <p className="text-text-muted mb-12">Insights about technology, design, and digital presence.</p>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 b-16">
                         {posts_data.map((post) => (
-                            <Link to={`/blog/${post.slug}`} key={post.id} className="group flex flex-col bg-secundary/20 border border-primary/20 rounded-2xl overflow-hidden hover:border-primary transition-all duration-300">
+                            <Link to={`/blog/${post.slug}`} key={post.id} className="group flex flex-col bg-primary/25 border border-primary rounded-2xl overflow-hidden hover:border-primary transition-all duration-300">
                                 <div className="p-6 flex flex-col gap-4">
                                     <span className="text-primary text-sm font-bold uppercase tracking-wider">{post.tags[0]}</span>
                                     <h2 className="text-2xl font-bold group-hover:text-primary transition-colors">{post.title}</h2>

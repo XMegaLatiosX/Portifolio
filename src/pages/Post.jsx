@@ -11,16 +11,16 @@ function Post() {
 
     return (
         <DefaultLayout>
-            <article className="pt-32 pb-16 flex flex-col items-center min-h-screen">
+            <article className="pt-32 pb-16 flex flex-col items-center">
                 <div className="w-full md:w-8/12 lg:w-6/12 px-4 md:px-0">
                     <Link to="/blog" className="flex items-center gap-2 text-primary hover:underline mb-8 font-bold">
                         <FaArrowLeft size={16} /> Back to blog
                     </Link>
 
                     <header className="mb-12">
-                        <div className="flex gap-2 mb-4">
+                        <div className="flex gap-2 mb-4 flex-wrap">
                             {post.tags.map(tag => (
-                                <span key={tag} className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
+                                <span key={tag} className="bg-primary/10 text-nowrap text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">
                                     {tag}
                                 </span>
                             ))}
@@ -45,7 +45,7 @@ function Post() {
                     />
 
                     <footer className="mt-16 pt-8 border-t border-text-muted/20">
-                        <div className="bg-secundary/20 p-8 rounded-2xl border border-primary/10 flex flex-col items-center text-center gap-4">
+                        <div className="bg-primary/20 p-8 rounded-2xl lg:border border-primary flex flex-col items-center text-center gap-4">
                             <h3 className="text-2xl font-bold">Did you enjoy this article?</h3>
                             <p className="text-text-muted">Let's build your brand's digital space today.</p>
                             <Link to="/contact" className="bg-primary text-white px-8 py-3 rounded-full font-bold hover:scale-105 transition-all">
