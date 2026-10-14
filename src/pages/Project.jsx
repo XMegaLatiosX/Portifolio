@@ -1,14 +1,17 @@
 import DefaultLayout from "../components/DefaultLayout"
 import projects_data from "../assets/projects/project_data.json"
-import { useParams } from "react-router-dom"
+import { Navigate, useParams } from "react-router-dom"
 import { HiOutlineExternalLink } from "react-icons/hi"
 import { TbProgressCheck } from "react-icons/tb"
 import { IoMdTime } from "react-icons/io"
 import { FaCalendarCheck } from "react-icons/fa"
 function Project() {
     const { project_name } = useParams()
-    const project = projects_data.filter(item => item.name === project_name)[0]
-    
+
+    const project = projects_data.find(item => item.name === project_name)
+
+    if (!project) return <Navigate to="/projects" replace />
+
     return (
         <DefaultLayout>
             <section className="pt-24 flex flex-col items-center">

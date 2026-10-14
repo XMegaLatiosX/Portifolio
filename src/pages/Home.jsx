@@ -1,9 +1,9 @@
-import { FaArrowDown, FaArrowRight, FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa"
+import { FaArrowRight, FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa"
 import DefaultLayout from "../components/DefaultLayout"
 import { GoMail } from "react-icons/go"
 import { Link } from "react-router-dom"
 import { MdArrowOutward } from "react-icons/md"
-import { useEffect, useRef, useState } from "react"
+import { useRef } from "react"
 import ContactForm from "../components/ContactForm"
 
 import project_data from "../assets/projects/project_data.json"
@@ -27,6 +27,17 @@ import desktop_xmegalatiosx_screenshot from "../assets/images/screenshots/deskto
 import { useReveal } from "../utils/useReveal"
 
 
+const SKILLS = [
+    { name: "CSS3", icon: css_icon },
+    { name: "HTML5", icon: html_icon },
+    { name: "ReactJS", icon: react_icon },
+    { name: "tailwindCSS", icon: tailwind_icon },
+    { name: "CloudFlare", icon: cloudflare_icon },
+    { name: "GitHub", icon: github_icon },
+    { name: "Git", icon: git_icon },
+    { name: "Supabase", icon: supabase_icon },
+]
+
 function SkillDisplay({name, icon}) {
     return (
         <div className="flex gap-3 p-1 px-3 rounded-4xl h-12 md:min-w-48 border-primary border  text-lg justify-center items-center font-semibold shadow-[0_0_5px_rgb(0,0,0,0.12)] shadow-primary">
@@ -44,14 +55,6 @@ function Home() {
     const reveal3 = useReveal()
 
 
-    useEffect(() => {
-        const checkScroll = () => {
-            set_is_on_top(window.scrollY < 20);
-        };
-
-        window.addEventListener('scroll', checkScroll);
-        return () => window.removeEventListener('scroll', checkScroll);
-    }, []);
 
     return (
         <DefaultLayout>
@@ -102,13 +105,13 @@ function Home() {
                         </p>
 
                         {/* Botões */}
-                        <div className="flex flex-wrap lg:justify-start justify-center gap-2 pt-2 *:px-2 *:py-2 *:lg:px-6 *:lg:py-3 *:rounded-md font-medium">
-                            <button className="bg-primary flex items-center gap-1 lg:gap-2">
+                        <div className="flex flex-wrap lg:justify-start justify-center gap-2 pt-2 *:px-4 *:py-2 *:lg:px-6 *:lg:py-3 *:rounded-md font-medium">
+                            <Link to="/contact" className="bg-primary flex items-center gap-1 lg:gap-2 text-white">
                                 Get a Free Quote <MdArrowOutward size={24}/>
-                            </button>
-                            <button className="border border-primary hover:bg-primary">
+                            </Link>
+                            <Link to="/projects" className="border border-primary hover:bg-primary transition-colors text-center">
                                 See my projects
-                            </button>
+                            </Link>
                         </div>
                     </div>
 
@@ -132,16 +135,9 @@ function Home() {
                 <a href="https://wa.me/5519971230319?text=Hello,%20I'm%20interested%20in%20a%20website!"><FaWhatsapp size={24}/><span>+55 (19) 97123-0319</span></a>
                 <a href="https://www.instagram.com/js.webdev/"><FaInstagram size={24}/><span>Instagram</span></a>
                 <a href="https://github.com/XMegaLatiosX?tab=repositories"><FaGithub size={24}/><span>GitHub</span></a>
-                <a href="mailto:juio.alves.souza@gmail.com://dominio.com"><GoMail size={24}/><span>Email</span></a>
+                <a href="mailto:juio.alves.souza@gmail.com"><GoMail size={24}/><span>Email</span></a>
             </div>
 
-
-
-            {/* <button type="button" onClick={() => {about_me_section.current?.scrollIntoView({ behavior: 'smooth' })}} 
-            className={`hover:*:scale-105 fixed hidden lg:flex flex-col self-center justify-center items-center bottom-2 gap-2 transition-all duration-500 ${is_on_top? 'opacity-0 scale-95 pointer-events-none' : 'opacity-100 scale-100 cursor-pointer pointer-events-auto'}`}>
-                <span className="text-text-muted">About me!</span>
-                <FaArrowDown className="rounded-full bg-primary p-1" size={32}/>
-            </button> */}
 
 
 
@@ -219,20 +215,19 @@ function Home() {
                 <div className="overflow-hidden w-full">
                     <div className="flex animate-loop-scroll gap-8">
                         <div className="flex gap-8 shrink-0">
-                            <SkillDisplay name={"CSS3"} icon={css_icon}/>  <SkillDisplay name={"HTML5"} icon={html_icon}/> 
-                            <SkillDisplay name={"ReactJS"} icon={react_icon}/>  <SkillDisplay name={"tailwindCSS"} icon={tailwind_icon}/>  <SkillDisplay name={"CloudFlare"} icon={cloudflare_icon}/>
-                            <SkillDisplay name={"GitHub"} icon={github_icon}/>  <SkillDisplay name={"Git"} icon={git_icon}/>  <SkillDisplay name={"Supabase"} icon={supabase_icon}/>
-                            
+                            {SKILLS.map((skill, index) => (
+                                <SkillDisplay key={index} name={skill.name} icon={skill.icon} />
+                            ))}
                         </div>
                         <div className="flex gap-8 shrink-0" aria-hidden="true">
-                            <SkillDisplay name={"CSS3"} icon={css_icon}/>  <SkillDisplay name={"HTML5"} icon={html_icon}/> 
-                            <SkillDisplay name={"ReactJS"} icon={react_icon}/>  <SkillDisplay name={"tailwindCSS"} icon={tailwind_icon}/>  <SkillDisplay name={"CloudFlare"} icon={cloudflare_icon}/>
-                            <SkillDisplay name={"GitHub"} icon={github_icon}/>  <SkillDisplay name={"Git"} icon={git_icon}/>  <SkillDisplay name={"Supabase"} icon={supabase_icon}/>
+                            {SKILLS.map((skill, index) => (
+                                <SkillDisplay key={index} name={skill.name} icon={skill.icon} />
+                            ))}
                         </div>
                         <div className="flex gap-8 shrink-0" aria-hidden="true">
-                            <SkillDisplay name={"CSS3"} icon={css_icon}/>  <SkillDisplay name={"HTML5"} icon={html_icon}/> 
-                            <SkillDisplay name={"ReactJS"} icon={react_icon}/>  <SkillDisplay name={"tailwindCSS"} icon={tailwind_icon}/>  <SkillDisplay name={"CloudFlare"} icon={cloudflare_icon}/>
-                            <SkillDisplay name={"GitHub"} icon={github_icon}/>  <SkillDisplay name={"Git"} icon={git_icon}/>  <SkillDisplay name={"Supabase"} icon={supabase_icon}/>
+                            {SKILLS.map((skill, index) => (
+                                <SkillDisplay key={index} name={skill.name} icon={skill.icon} />
+                            ))}
                         </div>
                     </div>
                 </div>
