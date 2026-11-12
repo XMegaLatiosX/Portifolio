@@ -3,42 +3,218 @@
     "name": "hls imoveis website",
     "title": "Real Estate Platform & Property Finder",
     "thumbnail": "/project_media/hls%20imoveis.png",
-    "summary": "A plataform for property search and sales convertion with contact form, messages saving system and administrator panel for items/database management.",
+    "summary": "A platform for property search and sales conversion with contact form, messages saving system and administrator panel for items/database management.",
     "description": "Built from scratch in 8 days, this platform goes beyond a simple listing page. The property catalog supports <strong>12 simultaneous search filters</strong> with real-time results, and each listing features embedded Google Maps with satellite view for precise location context.<br/><br/>The admin panel gives the agency full control over inventory — adding, editing and removing properties without touching a single line of code. A built-in messaging system captures and stores leads directly from the contact forms, turning the website into an active sales tool rather than a static brochure.",
-    "features": ["landing page", "contact CTA", "database", "message/advertise system", "8 unique pages", "google map integration", "property catalog", "admin panel", "search with 12 filters"],
+    "features": [
+      "landing page",
+      "contact CTA",
+      "database",
+      "message/advertise system",
+      "8 unique pages",
+      "google map integration",
+      "property catalog",
+      "admin panel",
+      "search with 12 filters"
+    ],
     "solution": "The website provided credibility and an online presence for the real estate agency, allowing interested parties to find the company and its listings naturally through Google searches.",
     "type": "Website",
     "duration": "8 days",
     "link": "https://hlsimoveis.com.br/",
     "status": "in development",
-    "date": "30/08/2026"
+    "date": "30/08/2026",
+    "pt": {
+      "title": "Plataforma de imóveis e busca de propriedades",
+      "summary": "Plataforma de busca e venda de imóveis com formulário de contato, sistema de mensagens e painel administrativo para gerenciar os itens.",
+      "description": "Construído do zero em 8 dias, vai além de uma simples lista de imóveis. O catálogo tem <strong>12 filtros de busca simultâneos</strong> com resultado em tempo real, e cada imóvel traz Google Maps embutido com visão de satélite.<br/><br/>O painel admin dá à imobiliária controle total do estoque: adicionar, editar e remover imóveis sem mexer em código. Um sistema de mensagens guarda os contatos vindos dos formulários, transformando o site em ferramenta de vendas.",
+      "features": [
+        "página inicial",
+        "botão de contato",
+        "banco de dados",
+        "sistema de mensagens/anúncios",
+        "8 páginas únicas",
+        "integração com Google Maps",
+        "catálogo de imóveis",
+        "painel admin",
+        "busca com 12 filtros"
+      ],
+      "solution": "O site deu credibilidade e presença online à imobiliária, permitindo que interessados encontrem a empresa e seus imóveis pelo Google.",
+      "duration": "8 dias"
+    }
   },
   {
     "name": "angrybreads website",
     "title": "online Bakery page for local orders",
     "thumbnail": "/project_media/angry%20breads.png",
-    "summary": "Webpage featuring catalog for products as desserts and online sellings for local clients",
+    "summary": "Webpage featuring catalog for products as desserts and online sales for local clients",
     "description": "A conversion-focused bakery page built in 5 days. The product catalog is fully managed through an admin panel, allowing the owner to update offerings, images, prices and availability independently.<br/><br/>The results came before the site was even finished — <strong>2 leads and the bakery's first online sale</strong> were generated during development, validating the approach of prioritizing clear CTAs and a friction-free browsing experience for local customers.",
-    "features": ["landing page", "contact CTA", "5 unique pages", "database", "admin panel", "catalog"],
-    "solution": "The brand got new visits and even during development already converted into 2 contacts and their first online sale for local people, also giving credibility to clients since the backery got its own website",
+    "features": [
+      "landing page",
+      "contact CTA",
+      "5 unique pages",
+      "database",
+      "admin panel",
+      "catalog"
+    ],
+    "solution": "The brand got new visits and even during development already converted into 2 contacts and their first online sale for local people, also giving credibility to clients since the bakery got its own website",
     "type": "Website",
     "duration": "5 days",
     "link": "https://www.angrybreads.com/",
     "status": "live",
-    "date": "22/07/2026"
+    "date": "22/07/2026",
+    "pt": {
+      "title": "Página online de padaria para pedidos locais",
+      "summary": "Site com catálogo de produtos como sobremesas e vendas online para clientes da região.",
+      "description": "Uma página de padaria focada em conversão, feita em 5 dias. O catálogo é todo gerenciado por um painel admin, e a dona atualiza produtos, imagens, preços e disponibilidade sozinha.<br/><br/>Os resultados vieram antes do fim: <strong>2 contatos e a primeira venda online da padaria</strong> aconteceram ainda durante o desenvolvimento.",
+      "features": [
+        "página inicial",
+        "botão de contato",
+        "5 páginas únicas",
+        "banco de dados",
+        "painel admin",
+        "catálogo"
+      ],
+      "solution": "A marca recebeu novas visitas e, ainda em desenvolvimento, já converteu 2 contatos e a primeira venda online para o público local, além de ganhar credibilidade por ter site próprio.",
+      "duration": "5 dias"
+    }
   },
   {
     "name": "xmegalatiosx website",
-    "title": "Artist personal webpage, gallery and progress tool",
+    "title": "My personal site: gallery, blog and progress tracker",
     "thumbnail": "/project_media/xmega%20latiosx.png",
-    "summary": "Personal website for a growing artist, displaying his content, featuring gallery for multiple genres of art, blog, public improvment tool as well as personal database and admin panel for content managment",
-    "description": "A personal platform built to outgrow the limitations of social media. Instead of being locked to a single content format like Instagram, the site spans <strong>15 pages across multiple creative disciplines</strong> — pixel art gallery, written blog, and a public self-improvement tracking tool where visitors can follow skill progression over time.<br/><br/>The account system supports profile pictures and custom nicknames, and the entire content pipeline — from blog posts to gallery uploads — is managed through a custom admin panel backed by Supabase. The platform's reach translated directly: <strong>the artist's Discord community doubled in size</strong> through organic traffic from the website alone.",
-    "features": ["landing page", "15 unique pages", "database", "admin panel", "gallery", "blog page", "public self improvment track tool","search system", "account system with profile picture and nickname"],
-    "solution": "The artist got his own gallery to publish and showcase his work and social media, no longer stuck to one art genre like he was on Instagram and other social media, he got visits from his website and the number of people in his social community on Discord doubled just through the website.",
+    "summary": "My own website as an artist: gallery for multiple art genres, blog, a public self-improvement tracker, plus a personal database and admin panel to manage content.",
+    "description": "A personal platform I built to outgrow the limits of social media. Instead of being locked into one content format like Instagram, the site spans <strong>15 pages across multiple creative areas</strong>: a pixel art gallery, a written blog, and a public self-improvement tool where visitors follow my skill progress over time.<br/><br/>It has accounts with profile pictures and nicknames, and all content, from blog posts to gallery uploads, is managed through a custom admin panel backed by Supabase. <strong>My Discord community doubled in size</strong> through organic traffic from the site alone.",
+    "features": [
+      "landing page",
+      "15 unique pages",
+      "database",
+      "admin panel",
+      "gallery",
+      "blog page",
+      "public self improvement track tool",
+      "search system",
+      "account system with profile picture and nickname"
+    ],
+    "solution": "I got my own gallery to publish and show my work and social media, no longer stuck to one art genre as on Instagram. The site brought visits and my Discord community doubled just through it.",
     "type": "Website",
     "duration": "-",
     "link": "https://xmegalatiosx.com/",
     "status": "in development",
-    "date": "18/01/2026"
+    "date": "18/01/2026",
+    "pt": {
+      "title": "Meu site pessoal: galeria, blog e ferramenta de progresso",
+      "summary": "Meu próprio site como artista: galeria de vários gêneros de arte, blog, ferramenta pública de evolução pessoal, banco de dados e painel admin para gerenciar o conteúdo.",
+      "description": "Uma plataforma pessoal que criei para ir além dos limites das redes sociais. Em vez de ficar preso a um formato como o Instagram, o site tem <strong>15 páginas em várias áreas criativas</strong>: galeria de pixel art, blog e uma ferramenta pública onde visitantes acompanham minha evolução ao longo do tempo.<br/><br/>Tem contas com foto de perfil e apelido, e todo o conteúdo é gerenciado por um painel admin próprio com Supabase. <strong>Minha comunidade no Discord dobrou de tamanho</strong> só com o tráfego orgânico do site.",
+      "features": [
+        "página inicial",
+        "15 páginas únicas",
+        "banco de dados",
+        "painel admin",
+        "galeria",
+        "blog",
+        "ferramenta pública de evolução",
+        "sistema de busca",
+        "contas com foto de perfil e apelido"
+      ],
+      "solution": "Ganhei uma galeria própria para publicar meu trabalho e redes, sem ficar preso a um gênero como no Instagram. O site trouxe visitas e minha comunidade no Discord dobrou só por ele."
+    }
+  },
+  {
+    "name": "maiia website",
+    "title": "Artist portfolio with commission system",
+    "thumbnail": "/project_media/maiia.png",
+    "summary": "Website for an artist with gallery, commission section showing open/closed status and slots, FAQ and terms of service.",
+    "description": "A site for the artist Maiia to show her art and organize commissions. A commission section shows whether commissions are <strong>open or closed</strong> and how many slots are available, so clients know before they message. It also includes an FAQ, terms of service and a contact area, with light/dark theme and smooth reveal animations.",
+    "features": [
+      "gallery",
+      "commission section with open/closed status and slots",
+      "FAQ",
+      "terms of service",
+      "contact",
+      "light and dark theme",
+      "reveal animations"
+    ],
+    "solution": "Commission rules, availability and contact live in one place, so the artist answers fewer repeated questions and clients know what to expect.",
+    "type": "Website",
+    "duration": "",
+    "link": "",
+    "status": "",
+    "date": "10/2026",
+    "pt": {
+      "title": "Portfólio de artista com sistema de comissões",
+      "summary": "Site para uma artista com galeria, seção de comissões com status aberto/fechado e vagas, FAQ e termos de serviço.",
+      "description": "Um site para a artista Maiia mostrar sua arte e organizar comissões. A seção de comissões mostra se estão <strong>abertas ou fechadas</strong> e quantas vagas existem, para o cliente saber antes de chamar. Também tem FAQ, termos de serviço e área de contato, com tema claro/escuro e animações suaves.",
+      "features": [
+        "galeria",
+        "seção de comissões com status aberto/fechado e vagas",
+        "FAQ",
+        "termos de serviço",
+        "contato",
+        "tema claro e escuro",
+        "animações de entrada"
+      ],
+      "solution": "Regras de comissão, disponibilidade e contato ficam num só lugar: a artista responde menos perguntas repetidas e o cliente sabe o que esperar."
+    }
+  },
+  {
+    "name": "rpm garage showcase",
+    "title": "Auto repair shop site (sample)",
+    "thumbnail": "/project_media/rpm-garage.png",
+    "summary": "Showcase site for an auto repair shop: services, WhatsApp contact, testimonials and opening hours.",
+    "description": "A showcase I built to demonstrate what a site for a local garage can look like. It presents <strong>services</strong>, a direct <strong>WhatsApp</strong> button, customer testimonials and opening hours. All content lives in a single data file, so updating the business info is quick. Content shown is sample content, not a real client.",
+    "features": [
+      "services section",
+      "WhatsApp contact",
+      "testimonials",
+      "opening hours",
+      "content in one data file"
+    ],
+    "solution": "Shows how a local business can put services, hours and a one-tap WhatsApp contact in front of customers who search online.",
+    "type": "Showcase",
+    "duration": "",
+    "link": "",
+    "status": "showcase",
+    "date": "10/2026",
+    "pt": {
+      "title": "Site de oficina mecânica (exemplo)",
+      "summary": "Site vitrine para uma oficina: serviços, contato por WhatsApp, depoimentos e horário de funcionamento.",
+      "description": "Uma vitrine que criei para mostrar como pode ser o site de uma oficina local. Apresenta <strong>serviços</strong>, botão direto de <strong>WhatsApp</strong>, depoimentos e horários. Todo o conteúdo fica em um único arquivo de dados, então atualizar as informações é rápido. O conteúdo é de exemplo, não de um cliente real.",
+      "features": [
+        "seção de serviços",
+        "contato por WhatsApp",
+        "depoimentos",
+        "horário de funcionamento",
+        "conteúdo em um único arquivo de dados"
+      ],
+      "solution": "Mostra como um negócio local pode colocar serviços, horários e WhatsApp a um toque de quem pesquisa na internet."
+    }
+  },
+  {
+    "name": "neon eclipse showcase",
+    "title": "Clothing store site (sample)",
+    "thumbnail": "/project_media/neon-eclipse.png",
+    "summary": "Showcase for an online clothing store. Sample content and no real payment.",
+    "description": "A showcase of how an online clothing store can look and feel, with a neon, dark visual identity. It is a demonstration: the products are sample content and <strong>no real payment</strong> is processed.",
+    "features": [
+      "product catalog",
+      "dark neon visual identity",
+      "responsive layout"
+    ],
+    "solution": "Demonstrates the look and browsing experience of a fashion store site before any real products or payments are connected.",
+    "type": "Showcase",
+    "duration": "",
+    "link": "",
+    "status": "showcase",
+    "date": "10/2026",
+    "pt": {
+      "title": "Site de loja de roupas (exemplo)",
+      "summary": "Vitrine de uma loja de roupas online. Conteúdo de exemplo e sem pagamento real.",
+      "description": "Uma vitrine de como pode ser uma loja de roupas online, com identidade visual escura e neon. É uma demonstração: os produtos são de exemplo e <strong>nenhum pagamento real</strong> é processado.",
+      "features": [
+        "catálogo de produtos",
+        "identidade visual escura com neon",
+        "layout responsivo"
+      ],
+      "solution": "Demonstra o visual e a navegação de uma loja de moda antes de conectar produtos e pagamentos reais."
+    }
   }
 ]

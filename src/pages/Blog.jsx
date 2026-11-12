@@ -1,14 +1,17 @@
 import DefaultLayout from "../components/DefaultLayout"
 import { Link } from "react-router-dom"
 import posts_data from "../assets/blog/posts.json"
+import { useLanguage } from "../i18n/useLanguage"
 
 function Blog() {
+    const { t } = useLanguage()
+
     return (
         <DefaultLayout>
             <section className="py-24 pb-16 flex flex-col items-center">
                 <div className="w-full md:w-10/12 px-4 md:px-0">
                     <h1 className="text-5xl font-bold mb-4">Blog</h1>
-                    <p className="text-text-muted mb-12">Insights about technology, design, and digital presence.</p>
+                    <p className="text-text-muted mb-12">{t("blog.sub")}</p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 b-16">
                         {posts_data.map((post) => (
@@ -19,7 +22,7 @@ function Blog() {
                                     <p className="text-text-muted line-clamp-3">{post.summary}</p>
                                     <div className="mt-4 flex items-center justify-between text-sm">
                                         <span>{post.date}</span>
-                                        <span className="font-bold underline group-hover:no-underline">Read more</span>
+                                        <span className="font-bold underline group-hover:no-underline">{t("blog.readMore")}</span>
                                     </div>
                                 </div>
                             </Link>

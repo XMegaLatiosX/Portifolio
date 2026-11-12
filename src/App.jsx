@@ -6,22 +6,25 @@ import Contact from './pages/Contact'
 import Blog from './pages/Blog'
 import Post from './pages/Post'
 import ScrollToHash from './components/ScrollToHash'
+import LanguageProvider from './i18n/LanguageProvider'
 
 function App() {
   return (
-    <BrowserRouter>
-    <ScrollToHash/>
-      <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/contact" element={<Contact/>} />
+    <LanguageProvider>
+      <BrowserRouter>
+      <ScrollToHash/>
+        <Routes>
+              <Route path="/" element={<Home/>} />
+              <Route path="/contact" element={<Contact/>} />
 
-            <Route path="/projects" element={<Projects/>} />
-            <Route path="/projects/:project_name" element={<Project/>} />
+              <Route path="/projects" element={<Projects/>} />
+              <Route path="/projects/:project_name" element={<Project/>} />
 
-            <Route path="/blog" element={<Blog/>} />
-            <Route path="/blog/:slug" element={<Post/>} />
-      </Routes>
-    </BrowserRouter>
+              <Route path="/blog" element={<Blog/>} />
+              <Route path="/blog/:slug" element={<Post/>} />
+        </Routes>
+      </BrowserRouter>
+    </LanguageProvider>
   )
 }
 
