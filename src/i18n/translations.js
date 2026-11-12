@@ -9,7 +9,6 @@ export const translations = {
         "nav.home": "HOME",
         "nav.about": "ABOUT ME",
         "nav.projects": "PROJECTS",
-        "nav.blog": "BLOG",
         "nav.contact": "CONTACT ME",
 
         "hero.l1": "YOUR",
@@ -91,16 +90,8 @@ export const translations = {
         "footer.home": "Home",
         "footer.about": "About me",
         "footer.projects": "Projects",
-        "footer.blog": "Blog",
         "footer.contactLink": "Contact",
         "footer.rights": "© 2026 Júlio Souza | All rights reserved.",
-
-        "blog.sub": "Insights about technology, design, and digital presence.",
-        "blog.readMore": "Read more",
-        "blog.back": "Back to blog",
-        "blog.enjoyed": "Did you enjoy this article?",
-        "blog.cta": "Let's put your business online.",
-        "blog.getInTouch": "Get in touch",
 
         "project.seeLive": "see live",
         "project.features": "Features",
@@ -125,7 +116,6 @@ export const translations = {
         "nav.home": "INÍCIO",
         "nav.about": "SOBRE MIM",
         "nav.projects": "PROJETOS",
-        "nav.blog": "BLOG",
         "nav.contact": "CONTATO",
 
         "hero.l1": "SEU",
@@ -207,16 +197,8 @@ export const translations = {
         "footer.home": "Início",
         "footer.about": "Sobre mim",
         "footer.projects": "Projetos",
-        "footer.blog": "Blog",
         "footer.contactLink": "Contato",
         "footer.rights": "© 2026 Júlio Souza | Todos os direitos reservados.",
-
-        "blog.sub": "Ideias sobre tecnologia, design e presença digital.",
-        "blog.readMore": "Ler mais",
-        "blog.back": "Voltar ao blog",
-        "blog.enjoyed": "Gostou deste artigo?",
-        "blog.cta": "Vamos colocar o seu negócio na internet.",
-        "blog.getInTouch": "Entre em contato",
 
         "project.seeLive": "ver online",
         "project.features": "Recursos",

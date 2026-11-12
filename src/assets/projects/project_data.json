@@ -123,7 +123,7 @@
     "title": "Artist portfolio with commission system",
     "thumbnail": "/project_media/maiia.png",
     "summary": "Website for an artist with gallery, commission section showing open/closed status and slots, FAQ and terms of service.",
-    "description": "A site for the artist Maiia to show her art and organize commissions. A commission section shows whether commissions are <strong>open or closed</strong> and how many slots are available, so clients know before they message. It also includes an FAQ, terms of service and a contact area, with light/dark theme and smooth reveal animations.",
+    "description": "A site for the artist Maiia to show her art and organize commissions. The gallery presents her work, and the commission section tells visitors right away whether commissions are <strong>open or closed</strong> and how many slots are available, so clients know before they message her.<br/><br/>An <strong>FAQ</strong> and <strong>terms of service</strong> answer the questions artists get over and over (how it works, what is included, the rules), and a contact area closes the path. The site has a <strong>light and dark theme</strong> and smooth reveal animations as you scroll.",
     "features": [
       "gallery",
       "commission section with open/closed status and slots",
@@ -142,7 +142,7 @@
     "pt": {
       "title": "Portfólio de artista com sistema de comissões",
       "summary": "Site para uma artista com galeria, seção de comissões com status aberto/fechado e vagas, FAQ e termos de serviço.",
-      "description": "Um site para a artista Maiia mostrar sua arte e organizar comissões. A seção de comissões mostra se estão <strong>abertas ou fechadas</strong> e quantas vagas existem, para o cliente saber antes de chamar. Também tem FAQ, termos de serviço e área de contato, com tema claro/escuro e animações suaves.",
+      "description": "Um site para a artista Maiia mostrar sua arte e organizar comissões. A galeria apresenta o trabalho dela, e a seção de comissões diz logo se estão <strong>abertas ou fechadas</strong> e quantas vagas existem, para o cliente saber antes de chamar.<br/><br/>Um <strong>FAQ</strong> e os <strong>termos de serviço</strong> respondem as perguntas que artistas ouvem toda hora (como funciona, o que está incluso, as regras), e uma área de contato fecha o caminho. O site tem <strong>tema claro e escuro</strong> e animações suaves de entrada ao rolar.",
       "features": [
         "galeria",
         "seção de comissões com status aberto/fechado e vagas",
@@ -158,9 +158,9 @@
   {
     "name": "rpm garage showcase",
     "title": "Auto repair shop site (sample)",
-    "thumbnail": "/project_media/rpm-garage.png",
+    "thumbnail": "/project_media/rpm%20garage.png",
     "summary": "Showcase site for an auto repair shop: services, WhatsApp contact, testimonials and opening hours.",
-    "description": "A showcase I built to demonstrate what a site for a local garage can look like. It presents <strong>services</strong>, a direct <strong>WhatsApp</strong> button, customer testimonials and opening hours. All content lives in a single data file, so updating the business info is quick. Content shown is sample content, not a real client.",
+    "description": "A showcase I built to demonstrate what a website for a local auto repair shop can look like. A garage lives on trust and on quick contact, so the site is organized around that: a clear list of <strong>services</strong>, customer <strong>testimonials</strong>, the <strong>opening hours</strong> and a direct <strong>WhatsApp</strong> button that opens a conversation in one tap.<br/><br/>Behind the scenes, all the business content (services, hours, testimonials, contact) lives in a <strong>single data file</strong>, so adapting the site to a real shop means editing one place instead of hunting through the code. With an admin panel, the owner could do that without touching any file.<br/><br/>Everything shown is sample content created for the demo, not a real client.",
     "features": [
       "services section",
       "WhatsApp contact",
@@ -177,7 +177,7 @@
     "pt": {
       "title": "Site de oficina mecânica (exemplo)",
       "summary": "Site vitrine para uma oficina: serviços, contato por WhatsApp, depoimentos e horário de funcionamento.",
-      "description": "Uma vitrine que criei para mostrar como pode ser o site de uma oficina local. Apresenta <strong>serviços</strong>, botão direto de <strong>WhatsApp</strong>, depoimentos e horários. Todo o conteúdo fica em um único arquivo de dados, então atualizar as informações é rápido. O conteúdo é de exemplo, não de um cliente real.",
+      "description": "Uma vitrine que criei para mostrar como pode ser o site de uma oficina mecânica local. Uma oficina vive de confiança e de contato rápido, então o site é organizado em torno disso: lista clara de <strong>serviços</strong>, <strong>depoimentos</strong> de clientes, <strong>horário de funcionamento</strong> e um botão de <strong>WhatsApp</strong> que abre a conversa com um toque.<br/><br/>Por trás, todo o conteúdo do negócio (serviços, horários, depoimentos, contato) fica em um <strong>único arquivo de dados</strong>, então adaptar o site para uma oficina real significa editar um só lugar, sem caçar no código. Com um painel admin, o próprio dono poderia fazer isso sem mexer em arquivo nenhum.<br/><br/>Tudo o que aparece é conteúdo de exemplo criado para a demonstração, não de um cliente real.",
       "features": [
         "seção de serviços",
         "contato por WhatsApp",
@@ -191,9 +191,9 @@
   {
     "name": "neon eclipse showcase",
     "title": "Clothing store site (sample)",
-    "thumbnail": "/project_media/neon-eclipse.png",
+    "thumbnail": "/project_media/neon%20eclipse.png",
     "summary": "Showcase for an online clothing store. Sample content and no real payment.",
-    "description": "A showcase of how an online clothing store can look and feel, with a neon, dark visual identity. It is a demonstration: the products are sample content and <strong>no real payment</strong> is processed.",
+    "description": "A showcase of how an online clothing store can look and feel, built around a dark, <strong>neon visual identity</strong> that makes the products stand out. It shows the browsing experience a shopper would have: a product catalog, a layout that adapts to phone and desktop, and a style that feels like a brand instead of a generic template.<br/><br/>It is a demonstration, so the products are sample content and <strong>no real payment</strong> is processed. The idea is to show a store owner what their shop could look like before any real products, stock or payment method are connected.",
     "features": [
       "product catalog",
       "dark neon visual identity",
@@ -208,7 +208,7 @@
     "pt": {
       "title": "Site de loja de roupas (exemplo)",
       "summary": "Vitrine de uma loja de roupas online. Conteúdo de exemplo e sem pagamento real.",
-      "description": "Uma vitrine de como pode ser uma loja de roupas online, com identidade visual escura e neon. É uma demonstração: os produtos são de exemplo e <strong>nenhum pagamento real</strong> é processado.",
+      "description": "Uma vitrine de como pode ser e parecer uma loja de roupas online, construída em torno de uma <strong>identidade visual escura com neon</strong> que destaca os produtos. Mostra a experiência de navegação de quem compra: catálogo de produtos, layout que se adapta ao celular e ao computador e um estilo que parece uma marca, não um template genérico.<br/><br/>É uma demonstração: os produtos são de exemplo e <strong>nenhum pagamento real</strong> é processado. A ideia é mostrar ao dono de uma loja como a sua poderia ficar antes de conectar produtos, estoque ou forma de pagamento de verdade.",
       "features": [
         "catálogo de produtos",
         "identidade visual escura com neon",

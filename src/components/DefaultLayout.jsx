@@ -39,7 +39,6 @@ function DefaultLayout({ children }) {
                         <Link to={'/#start'}><span>{t("nav.home")}</span></Link>
                         <Link to={'/#about_me_section'}><span>{t("nav.about")}</span></Link>
                         <Link to={'/projects'}><span>{t("nav.projects")}</span></Link>
-                        <Link to={'/blog'}><span>{t("nav.blog")}</span></Link>
                         <Link to={'/contact'}><span>{t("nav.contact")}</span></Link>
 
                         <div className="no-underline"><LanguageToggle /></div>
@@ -61,11 +60,10 @@ function DefaultLayout({ children }) {
 
                 </div>
 
-                <div className={`absolute flex w-full max-w-full flex-col *:min-h-12 text-xl font-bold bg-background backdrop-blur-md top-14 *:active:duration-150 *:transition-all *:duration-300 *:items-center *:justify-center *:flex *:border-b-2 *:border-text-muted lg:min-h-0 lg:max-h-0 ${nav_bar_open? 'min-h-60 max-h-60' : 'min-h-0 max-h-0'} transition-all duration-500 overflow-hidden z-40`}>
+                <div className={`absolute flex w-full max-w-full flex-col *:min-h-12 text-xl font-bold bg-background backdrop-blur-md top-14 *:active:duration-150 *:transition-all *:duration-300 *:items-center *:justify-center *:flex *:border-b-2 *:border-text-muted lg:min-h-0 lg:max-h-0 ${nav_bar_open? 'min-h-48 max-h-48' : 'min-h-0 max-h-0'} transition-all duration-500 overflow-hidden z-40`}>
                         <Link to={'/#start'}><span>{t("nav.home")}</span></Link>
                         <Link to={'/#about_me_section'}><span>{t("nav.about")}</span></Link>
                         <Link to={'/projects'}><span>{t("nav.projects")}</span></Link>
-                        <Link to={'/blog'}><span>{t("nav.blog")}</span></Link>
                         <Link to={'/contact'}><span>{t("nav.contact")}</span></Link>
                 </div>
             </header>
@@ -104,7 +102,6 @@ function DefaultLayout({ children }) {
                             <li><Link to={'/'}>{t("footer.home")}</Link></li>
                             <li><Link to={'/#about_me_section'}>{t("footer.about")}</Link></li>
                             <li><Link to={'/projects'}>{t("footer.projects")}</Link></li>
-                            <li><Link to={'/blog'}>{t("footer.blog")}</Link></li>
                             <li><Link to={'/contact'}>{t("footer.contactLink")}</Link></li>
                         </ul>
                     </div>
